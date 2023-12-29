@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.desktop-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    top: 4dvi;
+    height: 90px;
+}
+.logo {
+    height: 3.5rem;
+    margin-right: 95rem;
+}
+.bar {
+    position: absolute;
+    display: flex;
+    height: 0.1px;
+    background-color: grey;
+    width: 37rem;
+    margin-right: 35rem;
+}
+.desktop-header nav {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    height: 7rem;
+    width: 100vh;
+    right: 0;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+} 
+.desktop-header nav a, u {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.desktop-header nav a:focus,
+.desktop-header nav a:hover{ 
+   color: black;
+   font-weight: bold;
+ }
+ #active {
+    color: black;
+    font-weight: bold;
+ }
+.bar2 {
+    position: absolute;
+    background-color: white; 
+    height: 4px;
+    width: 9.5rem;
+    margin-bottom: -7rem;
+    margin-right: -30rem;
+    
+ }
+.desktop-header nav .a1:focus::after,
+.desktop-header nav .a1:hover::after{
+    left: 11.2rem;
+    width: 6rem;
+ }
+.desktop-header nav .a2:focus::after,
+.desktop-header nav .a2:hover::after{
+    left: 19.9rem;
+    width: 10rem;
+}
+.desktop-header nav .a3:focus::after,
+.desktop-header nav .a3:hover::after{
+    left: 32.3rem;
+    width: 5.5rem;
+}
+
+ .desktop-header nav a::after{
+	content: "";
+	pointer-events: none;
+	bottom: -2px;
+	left: 50%;
+	position: absolute;
+	width: 0%;
+	height: 4px;
+	background-color: white;
+	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-duration: 400ms;
+	transition-property: width, left;
+ }
+ .welcome {position: absolute; font-size: 30px; color: whitesmoke; font-family: 'Josefin Sans', sans-serif; top: 17rem; left: 15rem;}
+ .welcome u {color: grey; font-weight: bold;}
+ .parent4,.parent5,.parent6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    top: 15rem;
+    position: relative;
+}
+.parent6,.parent5 {
+    display: none;
+}
+.texts,.texts1,.texts2 {
+    position: absolute;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    left: 32rem;
+    justify-items: center;
+    top: 7rem;
+}
+.texts h1 { font-size: 3rem; margin-top: -0.5rem;}
+.texts h2 {font-family: 'Josefin Sans', sans-serif; font-size: 18px;}
+.texts p {font-family: 'Josefin Sans', sans-serif; font-size: 28px; margin-top: -0.54rem;}
+.texts1 h1 { font-size: 3rem; margin-top: -0.5rem;}
+.texts1 h2 {font-family: 'Josefin Sans', sans-serif; font-size: 18px;}
+.texts1 p {font-family: 'Josefin Sans', sans-serif; font-size: 28px; margin-top: -0.54rem;}
+.texts2 h1 { font-size: 3rem; margin-top: -0.5rem;}
+.texts2 h2 {font-family: 'Josefin Sans', sans-serif; font-size: 18px;}
+.texts2 p {font-family: 'Josefin Sans', sans-serif; font-size: 28px; margin-top: -0.54rem;}
+.box3,.box4,.box5 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    top: 28.5rem;
+    left: 15rem;
+}
+.div3,.div4,.div5 {
+    position: absolute;
+    right: 2rem;
+}
+.circle {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 100%;
+    border: grey solid 1px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    cursor: pointer;
+}
+#circle {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    top: 15rem;
+    position: relative;
+    animation: fade-in 2s forwards;
+  }
+  #parent1{
+    animation: fade-out 500ms forwards;
+  }
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

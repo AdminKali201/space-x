@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container { 
+    position: relative;
+    height: 105%;
+    background-size: cover;
+    background-image: url(/images/home/background-home-desktop.jpg);
+}
+
+.bar {
+    position: absolute;
+    display: flex;
+    height: 0.1;
+    background-color: grey;
+    width: 37rem;
+    margin: 7.5rem 20rem;
+}
+.logo {
+    display: block;
+    position: absolute;
+    margin: 5.5rem 5.5rem;  
+    height: 3.5rem;
+}
+.desktop-menu a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+	transition-duration: 400ms;
+	transition-property: color;
+	transition: color 0.4s ease-in-out;
+    flex-wrap: wrap;
+}
+.desktop-menu U {
+    font-weight: bold;
+    text-decoration: NONE;
+}
+.desktop-menu  {
+    position: absolute;
+    height: 7rem;
+    width: 105vh;
+    right: 0;
+    margin-top: 4rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+.texts {
+    position: absolute;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-top: 25rem;
+    flex-wrap: wrap;
+}
+.texts h2{ font-size: 45px;font-family: 'Josefin Sans', sans-serif;}
+.texts h1 { font-size: 10.5rem; margin: -2rem 2rem;}
+.texts p { font-size: 24px;font-family: 'Josefin Sans', sans-serif; margin-top: 4rem;}
+.explore {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 28rem;
+    margin-left: 80rem;
+    background-color: white;
+    color: rgb(48, 47, 47);
+    height: 350px;
+    width: 350px;
+    border-radius: 200%;
+    flex-wrap: wrap;
+}
+
+.desktop-menu a:focus,
+.desktop-menu a:hover{ 
+   color: black;
+   font-weight: bold;
+ }
+ #active {
+    color: black;
+    font-weight: bold;
+ }
+ .bar2 {
+    background-color: white; 
+    height: 4px;
+    width: 6rem;
+    margin-bottom: -7rem;
+    margin-right: -9.6rem;
+ }
+ .desktop-menu .a2:focus::after,
+ .desktop-menu .a2:hover::after{
+    left: 21.2rem;
+    width: 10rem;
+ }
+.desktop-menu .a3:focus::after,
+.desktop-menu .a3:hover::after{
+    left: 34.7rem;
+    width: 5.5rem;
+}
+.desktop-menu .a4:focus::after,
+.desktop-menu .a4:hover::after{
+    left: 43.2rem;
+    width: 11rem;
+}
+
+ .desktop-menu a::after{
+	content: "";
+	pointer-events: none;
+	bottom: -2px;
+	left: 50%;
+	position: absolute;
+	width: 0%;
+	height: 4px;
+	background-color: white;
+	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-duration: 400ms;
+	transition-property: width, left;
+ }
+ .tablette-device {
+        display: none;
+}
+ .container3 {
+    display: none;
+ }
+@media screen and (max-width:1440px){
+    .bar {
+       display: none;
+    }
+    .explore {
+        margin: 30rem 65rem;
+        color: rgb(48, 47, 47);
+    }
+    .texts {
+        top: -5re3;
+    } }
+@media screen and (max-width: 1024px){
+    .container {
+        height: 120%;
+       background-image: url(/images/home/background-home-tablet.jpg);
+       background-size: cover;
+    }
+    .desktop-menu {
+       width: 70vh; 
+    }
+    .texts {
+        margin: 23rem 15rem;
+    }
+    .explore {
+        margin: 53rem 23rem;
+    }
+}
+ @media screen and (max-width: 918px) {
+    .container {
+        display: none;
+    }
+    .tablette-device {
+        display: contents;
+    }
+    .tablette-header {
+        display: flex;
+    }
+    .container1{
+        position: relative;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(/images/home/background-home-tablet.jpg);
+    }
+    .tablette-logo {
+        height: 3.5rem;
+        padding-top: 1.5rem;
+        padding-left: 2rem;
+    }
+    .tablette-menu {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        right: 0;
+        height: 75px;
+        top: 1rem;
+        padding: 0 1rem;
+        font-size: 18px;
+        font-family: 'Josefin Sans', sans-serif;
+        background: rgba(255, 255, 255, 0.12);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    .tablette-menu a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 25px 12px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .tablette-menu u {
+        text-decoration: none;
+    }
+    #tablette-active {
+        text-decoration: none;
+        color: #1f1f1f;
+        background-color: whitesmoke;
+    }
+    .tablette-menu a:hover {
+        text-decoration: none;
+        text-decoration: none;
+        color: #1f1f1f;
+        background-color: whitesmoke;
+    }
+    .texts1 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 13rem;
+        text-align: center;
+        margin: auto 12rem;
+    }
+    .texts1 h2{ color: whitesmoke; font-size: 2.5rem; font-family: 'Josefin Sans', sans-serif ;}
+    .texts1 h1 { font-size: 9rem; color: whitesmoke; margin: 0.5rem auto;}
+    .texts1 p {
+        color: whitesmoke; font-family: 'Josefin Sans', sans-serif; font-size: 25px;}
+    
+    .explore-tablette{
+        position: absolute;
+        margin: -17.5rem 17rem;
+        background-color: whitesmoke;
+        color: rgb(48, 47, 47);
+        height: 250px;
+        width: 250px;
+        margin-left: 21rem;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width: 480px){
+    .container,.container1 {
+        display: none;
+    }
+    .container3 {
+        display:flex;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-image: url(/images/home/background-home-mobile.jpg);
+        background-size: cover;
+    }
+    #navbar {
+        position: fixed;
+        right: 0;
+        height: 100%;
+        width: 0;
+        background-color: whitesmoke;
+        transition: all 0.5s ease;
+        z-index: 90;
+    }
+
+    #navbar nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        margin: 15rem 5.5rem;
+    }
+    #navbar nav a, u {
+        text-decoration: none;
+        font-size: 27px;
+        color: rgb(48, 47, 47);
+        font-weight: bold;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    .hide {
+        display: none;
+    }
+    #open-icon {
+        height: 3.5rem;
+        margin: 2rem 35rem;
+    }
+    #close-icon {
+        position: absolute;
+        height: 3.5rem;
+        margin: 2rem 35rem;
+        z-index: 99;
+    }
+    .logo {
+        height: 5rem;
+        margin: 1.5rem 2rem;
+    }
+    .texts2 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        color: whitesmoke;
+        text-align: center;
+        margin: 10rem 5.5rem;
+    }
+    .texts2 h2 {font-size: 40px;font-family: 'Josefin Sans', sans-serif ;}
+    .texts2 h1 {font-size:8.1rem;font-family: 'Josefin Sans', sans-serif ; margin-top: 2rem; }
+    .texts2 p {font-size: 33px;font-family: 'Josefin Sans', sans-serif ;margin-top: -2rem;}
+    .explore-mobile {
+        position: absolute;
+        display: flex;
+        font-size: 22px;
+        color: rgb(48, 47, 47);
+        background-color: whitesmoke;
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 47rem 11rem;
+    }
+}

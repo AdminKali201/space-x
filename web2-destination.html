@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,100&family=Open+Sans:wght@500&family=Playfair+Display:ital@1&family=Roboto:wght@900&family=Source+Code+Pro:ital@1&family=Tajawal:wght@300&family=Tilt+Prism&family=Unbounded:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/web2-destination.css">
+    <title>SPACE X | DESTINATION</title>
+</head>
+<body>
+    <div class="container">
+        <div class="desktop-device">
+            <div class="desktop-header">
+                <img class="logo" src="/shared/logo.svg" alt="">
+                <nav>
+                    <div class="bar2"></div>
+                    <a class="a1" href="/web2-home.html">00 HOME</a>
+                    <a class="a2" href="/web2-destination.html" id="active">01 DESTINATION</a>
+                    <a class="a3" href="/web2-crew.html">02 CREW</a>
+                    <a class="a4" href="/web2-technology.html">03 TECHNOLOGY</a>
+                </nav>
+                <div class="bar"></div>
+            </div>
+            <div class="welcome"><u>01</u> PICK YOUR DESTINATION</div>
+        </div>
+        <div class="parent">
+            <div class="box1">
+                <img class="box-img" src="/images/destination/image-mars.png" alt="">
+                <img class="box-img1" src="/images/destination/image-moon.png" alt="" >
+                <img class="box-img2" src="/images/destination/image-europa.png" alt="">
+                <img class="box-img3" src="/images/destination/image-titan.png" alt="" >
+            </div>
+            <div class="box2">
+                <div class="container1">
+                    <div class="names">
+                        <button class="btn1" onclick="MOON()">MOON</button>                       
+                        <button class="btn2" onclick="MARS()">MARS</button>
+                        <button class="btn3" onclick="EUROPA()">EUROPA</button>
+                        <button class="btn4" onclick="TITAN()">TITAN</button >
+                    </div>
+                    <div class="name" >MOON</div>
+                    <div class="name1">MARS</div>
+                    <div class="name2">EUROPA</div>
+                    <div class="name3">TITAN</div>
+                    <p class="para"> Don't forget to pick your hiking boots.You'll neeed them <br>
+                        to tackle Olympus Mons, the tallest planetary mountain in <br>
+                        our solar system. It's two and half times the size of <br>
+                        Everst!
+                    </p>
+                    <p class="para1">
+                        Venturing beyond the earthly confines, traveling to the moon<br> 
+                        stands as the pinnacle of human achievement, <br>
+                        embodying the relentless pursuit of exploration and the <br>
+                        insatiable quest for knowledge. From the boundless darkness <br>
+                        of space, the lunar surface emerges, captivating the human <br>
+                        spirit with its mysterious allure and beckoning the daring <br>
+                        hearts of adventurers and dreamers alike.
+                    </p>
+                    <p class="para2">
+                        Embarking on a cosmic odyssey, the voyage to Europa, <br>
+                        Jupiter's icy moon, represents a bold leap into the realms <br>
+                        of possibility, enticing intrepid explorers with the promise <br>
+                        of uncovering hidden oceans and potential extraterrestrial life.<br> 
+                        As the spacecraft traverses the cosmic expanse, Europa's <br>
+                        enigmatic surface beckons, shrouded in an icy veil that veils <br>
+                        the secrets of its subsurface ocean, sparking the imagination <br>
+                        and fueling the fervor for interplanetary discovery.
+                    </p>
+                    <p class="para3">
+                        Journeying to Titan, Saturn's largest moon, unlocks the <br>
+                        doorway to a world shrouded in an ethereal haze, where <br>
+                        vast methane lakes and towering icy mountains paint an <br>
+                        otherworldly tableau. Amidst the frigid expanse, the quest <br> 
+                        for signs of life propels scientific exploration, igniting <br>
+                        the imagination with the tantalizing prospect of <br>
+                        extraterrestrial discovery.
+                    </p>
+                    <div class="bar3"></div>
+                    <div id="info-moon">
+                        <div class="info-left">
+                            <h2>AVG. DISTANCE</h2>
+                            <h1>384,400 KM.</h1>
+                        </div>
+                        <div class="info-right">
+                            <h2>EST. TRAVEL TIME</h2>
+                            <h1>3 DAYS</h1>
+                        </div>
+                    </div>
+                    <div id="info-mars">
+                        <div class="info-left">
+                            <h2>AVG. DISTANCE</h2>
+                            <h1>225 MIL. KM</h1>
+                        </div>
+                        <div class="info-right">
+                            <h2>EST. TRAVEL TIME</h2>
+                            <h1>9 MONTHS</h1>
+                        </div>
+                    </div>
+                    <div id="info-europa">
+                        <div class="info-left">
+                            <h2>AVG. DISTANCE</h2>
+                            <h1>1,940 MIL.</h1>
+                        </div>
+                        <div class="info-right">
+                            <h2>EST. TRAVEL TIME</h2>
+                            <h1>3 YEARS</h1>
+                        </div>
+                    </div>
+                    <div id="info-titan">
+                        <div class="info-left">
+                            <h2>AVG. DISTANCE</h2>
+                            <h1>1.2 bilion KM.</h1>
+                        </div>
+                        <div class="info-right">
+                            <h2>EST. TRAVEL TIME</h2>
+                            <h1>7 YEARS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <img src="/shared/logo.svg" alt="" class="logo">
+        <img id="open-icon" class="" src="/shared/icon-hamburger.svg" alt="" onclick="opennavbar()">
+        <img id="close-icon" class="hide" src="/shared/icon-close.svg" alt="" onclick="closenavbar()">
+        <div id="navbar" >
+            <nav>
+                <a href="/web2-home.html"><U>00</U> HOME</a>
+                <a href="/web2-destination.html"><U>01</U> DESTINATION</a>
+                <a href="/web2-crew.html"><U>02</U> CREW</a>
+                <a href="/web2-technology.html"><U>03</U> TECHNOLOGY</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container7"></div>
+    <div class="container5">
+        <img class="back-tablet" src="/images/destination/background-destination-tablet.jpg" alt="">
+        <div class="tablette-device">
+            <div class="tablette-header">
+                <img class="tablette-logo" src="/images/shared/logo.svg" alt="">
+                <nav>
+                    <a href="/web2-home.html">00 HOME</a>
+                    <a href="/web2-destination.html" id="tablette-active">01 DESTINATION</a>
+                    <a href="/web2-crew.html">02 CREW</a>
+                    <a href="/web2-technology.html">03  TECHNOLOGY</a>
+                </nav>
+            </div>
+        </div>
+        <div class="welcome1"><u>01</u> PICK YOUR DESTINATION</div>        
+        <div class="parent1">
+            <div class="box3">
+                <img class="box-img4" src="/images/destination/image-mars.png" alt="">
+                <img class="box-img5" src="/images/destination/image-moon.png" alt="" >
+                <img class="box-img6" src="/images/destination/image-europa.png" alt="">
+                <img class="box-img7" src="/images/destination/image-titan.png" alt="" >
+            </div>
+            <div class="box4">
+                <div class="container6">
+                    <div class="names1">
+                        <button class="btn5" onclick="MOON1()">MOON</button>                       
+                        <button class="btn6" onclick="MARS1()">MARS</button>
+                        <button class="btn7" onclick="EUROPA1()">EUROPA</button>
+                        <button class="btn8" onclick="TITAN1()">TITAN</button >
+                    </div>
+                    <div class="name4" >MOON</div>
+                    <div class="name5">MARS</div>
+                    <div class="name6">EUROPA</div>
+                    <div class="name7">TITAN</div>
+                    <p class="para4"> Don't forget to pick your hiking boots.You'll neeed them <br>
+                        to tackle Olympus Mons, the tallest planetary mountain in <br>
+                        our solar system. It's two and half times the size of <br>
+                        Everst!
+                    </p>
+                    <p class="para5">
+                        Venturing beyond the earthly confines, traveling to the moon<br> 
+                        stands as the pinnacle of human achievement, <br>
+                        embodying the relentless pursuit of exploration and the <br>
+                        insatiable quest for knowledge. From the boundless darkness <br>
+                        of space, the lunar surface emerges, captivating the human <br>
+                        spirit with its mysterious allure and beckoning the daring <br>
+                        hearts of adventurers and dreamers alike.
+                    </p>
+                    <p class="para6">
+                        Embarking on a cosmic odyssey, the voyage to Europa, <br>
+                        Jupiter's icy moon, represents a bold leap into the realms <br>
+                        of possibility, enticing intrepid explorers with the promise <br>
+                        of uncovering hidden oceans and potential extraterrestrial life.<br> 
+                        As the spacecraft traverses the cosmic expanse, Europa's <br>
+                        enigmatic surface beckons, shrouded in an icy veil that veils <br>
+                        the secrets of its subsurface ocean, sparking the imagination <br>
+                        and fueling the fervor for interplanetary discovery.
+                    </p>
+                    <p class="para7">
+                        Journeying to Titan, Saturn's largest moon, unlocks the <br>
+                        doorway to a world shrouded in an ethereal haze, where <br>
+                        vast methane lakes and towering icy mountains paint an <br>
+                        otherworldly tableau. Amidst the frigid expanse, the quest <br> 
+                        for signs of life propels scientific exploration, igniting <br>
+                        the imagination with the tantalizing prospect of <br>
+                        extraterrestrial discovery.
+                    </p>
+                    <div id="info-moon1">
+                        <div class="info-left">
+                            <h2>AVG. DISTANCE</h2>
+                            <h1>384,400 KM.</h1>
+                        </div>
+                        <div class="info-right">
+                            <h2>EST. TRAVEL TIME</h2>
+                            <h1>3 DAYS</h1>
+                        </div>
+                    </div>
+                    <div id="info-mars1">
+                        <div class="info-left">
+                            <h2>AVG. DISTANCE</h2>
+                            <h1>225 MIL. KM</h1>
+                        </div>
+                        <div class="info-right">
+                            <h2>EST. TRAVEL TIME</h2>
+                            <h1>9 MONTHS</h1>
+                        </div>
+                    </div>
+                    <div id="info-europa1">
+                        <div class="info-left">
+                            <h2>AVG. DISTANCE</h2>
+                            <h1>1,940 MIL.</h1>
+                        </div>
+                        <div class="info-right">
+                            <h2>EST. TRAVEL TIME</h2>
+                            <h1>3 YEARS</h1>
+                        </div>
+                    </div>
+                    <div id="info-titan1">
+                        <div class="info-left">
+                            <h2>AVG. DISTANCE</h2>
+                            <h1>1.2 bilion KM.</h1>
+                        </div>
+                        <div class="info-right">
+                            <h2>EST. TRAVEL TIME</h2>
+                            <h1>7 YEARS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/web2.js"></script>
+</body>
+</html>
